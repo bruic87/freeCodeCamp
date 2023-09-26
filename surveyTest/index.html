@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form Test</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form Test</h1>
+    <p id="description">Form built for technical skills testing purposes</p>
+    <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+      <fieldset >
+        <legend>Personal Data</legend>
+        <label id="name-label" for="name" ><input id="name" type="text" placeholder="Type your full name" required>Name</label>
+        <label id="email-label" for="email"><input id="email" type="email" placeholder="Type your email" required>E-mail</label>
+        <label id="number-label" for="number"><input id="number" type="number" min="8" max="9" placeholder="Type your telephone number">Number</label>
+      </fieldset>
+      <fieldset>
+        <legend>Purpose</legend>
+        <label>
+          <select id="dropdown">
+            <option>--Select One Option--</option>
+            <option>Personal Account</option>
+            <option>Professional Account</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Desired working period</legend>
+        <label><input type="radio" name="time-job" value="part-time">Part-time job</label>
+        <label><input type="radio" name="time-job" value="full-time">Full-time job</label>
+      </fieldset>
+      <fieldset>
+        <legend>Knowledge</legend>
+        <label><input type="checkbox" value="html5">HTML5</label>
+        <label><input type="checkbox" value="css3">CSS3</label>
+        <label><input type="checkbox" value="javascript">Javascript</label>
+        <label><input type="checkbox" value="typescript">Typescript</label>
+        <label><input type="checkbox" value="nodejs">NodeJS</label>
+        <label><input type="checkbox" value="php">PHP</label>
+      </fieldset>
+      <fieldset>
+        <legend>Additional Comments</legend>
+        <label>
+          <textarea rows="5" cols="30" placeholder="Describe yourself, yours goals, your experiences, tell us everything about you"></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit">
+    </form>
+  </body>
+</html>
